@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Services — Water, Environment &amp; Infrastructure | SIPCS</title>
+<meta name="description" content="Water conservation, afforestation, DPR &amp; consulting, and CSR project implementation — delivered end-to-end across India by SIPCS." />
+<link rel="icon" type="image/png" href="assets/images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header id="navShell" class="nav-shell">
+  <div class="container-x flex items-center justify-between py-3">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/images/logo-white.png" alt="SIPCS" class="logo-light h-[50px] lg:h-[60px] w-auto" />
+      <img src="assets/images/logo.png" alt="SIPCS" class="logo-dark h-[50px] lg:h-[60px] w-auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-9">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link active">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="hidden lg:block">
+      <a href="contact.html" class="btn nav-cta-primary">Start a project
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <button id="menuBtn" class="menu-btn lg:hidden p-2 -mr-2" aria-label="Open menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+  <div class="container-x flex items-center justify-between py-4 border-b border-gray-100">
+    <img src="assets/images/logo.png" alt="SIPCS" class="h-11" />
+    <button id="menuClose" class="p-2 -mr-2" aria-label="Close menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="container-x flex-1 flex flex-col justify-center gap-1">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html" class="btn btn-primary mt-6 self-start">Start a project →</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="ph-bg" style="background-image:url('https://images.unsplash.com/photo-1559825481-12a05cc00344?auto=format&fit=crop&w=2400&q=85');"></div>
+  <div class="ph-overlay"></div>
+  <div class="container-x grid lg:grid-cols-12 gap-10 items-end">
+    <div class="lg:col-span-8 reveal">
+      <span class="eyebrow">Our services</span>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl mt-5 leading-[1.05]">
+        Four practice areas, <br/>
+        <span class="italic font-light">one</span> integrated promise.
+      </h1>
+      <p class="page-hero-text mt-6 text-lg max-w-2xl leading-relaxed">
+        From hydrological surveys to handover — we deliver the entire value chain in-house, so quality and accountability never get lost in handoffs.
+      </p>
+    </div>
+    <div class="lg:col-span-4 reveal">
+      <nav class="flex flex-col gap-1 bg-white/95 backdrop-blur-md border border-white/30 rounded-2xl p-3 shadow-xl">
+        <a href="#water" class="px-4 py-3 rounded-xl hover:bg-[color:var(--color-surface-tint)] flex items-center justify-between text-sm font-medium text-[color:var(--color-ink)]">
+          <span>Water Conservation</span>
+          <span class="text-[color:var(--color-primary)]">01</span>
+        </a>
+        <a href="#afforestation" class="px-4 py-3 rounded-xl hover:bg-[color:var(--color-surface-tint)] flex items-center justify-between text-sm font-medium text-[color:var(--color-ink)]">
+          <span>Afforestation &amp; Ecology</span>
+          <span class="text-[color:var(--color-primary)]">02</span>
+        </a>
+        <a href="#consulting" class="px-4 py-3 rounded-xl hover:bg-[color:var(--color-surface-tint)] flex items-center justify-between text-sm font-medium text-[color:var(--color-ink)]">
+          <span>Consulting &amp; Monitoring</span>
+          <span class="text-[color:var(--color-primary)]">03</span>
+        </a>
+        <a href="#csr" class="px-4 py-3 rounded-xl hover:bg-[color:var(--color-surface-tint)] flex items-center justify-between text-sm font-medium text-[color:var(--color-ink)]">
+          <span>CSR Implementation</span>
+          <span class="text-[color:var(--color-primary)]">04</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 01 - WATER -->
+<section id="water" class="section">
+  <div class="container-x grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-6 reveal">
+      <div class="relative">
+        <div class="absolute -inset-4 rounded-[28px] bg-gradient-to-br from-[#1e5f73]/10 to-[#5a9b3e]/10 blur-2xl"></div>
+        <img src="https://images.unsplash.com/photo-1581922814484-0b48460b7010?auto=format&fit=crop&w=900&q=80" alt="Water conservation" class="relative rounded-[28px] w-full h-[480px] object-cover border border-white shadow-xl"/>
+      </div>
+    </div>
+    <div class="lg:col-span-6 reveal">
+      <div class="text-xs uppercase tracking-widest text-[color:var(--color-primary)] font-semibold">Practice 01</div>
+      <h2 class="font-display text-4xl lg:text-5xl font-semibold mt-3 leading-[1.1]">Water Conservation &amp; Recharge Structures</h2>
+      <p class="text-[color:var(--color-muted)] mt-5 text-lg leading-relaxed">
+        End-to-end solutions focused on water security, conservation, and ecosystem restoration — engineered for India's diverse hydrology.
+      </p>
+      <div class="brand-divider mt-6"></div>
+      <div class="mt-6">
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">Pond &amp; Water Body Restoration</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">De-silting, embankment strengthening, inlet/outlet design and landscaping.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">Rainwater Harvesting Systems</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Rooftop, surface and recharge well systems for residential, industrial and institutional sites.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">Wastewater Treatment Solutions</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Conventional STPs and decentralised DEWATS systems with reuse integration.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">Watershed Management &amp; Check Dams</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Catchment-scale interventions to slow, store and recharge surface runoff.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 02 - AFFORESTATION -->
+<section id="afforestation" class="section bg-[color:var(--color-surface-soft)]">
+  <div class="container-x grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-6 reveal order-2 lg:order-1">
+      <div class="text-xs uppercase tracking-widest text-[color:var(--color-accent-dark)] font-semibold">Practice 02</div>
+      <h2 class="font-display text-4xl lg:text-5xl font-semibold mt-3 leading-[1.1]">Afforestation &amp; Ecological Development</h2>
+      <p class="text-[color:var(--color-muted)] mt-5 text-lg leading-relaxed">
+        Creating resilient green landscapes that enhance biodiversity, restore degraded land, and re-introduce native species to the everyday city.
+      </p>
+      <div class="brand-divider mt-6"></div>
+      <div class="mt-6">
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">Afforestation &amp; Plantation Drives</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Site-appropriate native species, structured plantation cycles, and long-term care.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">Miyawaki Forest Development</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Dense native multi-layered forests grown 10× faster on a fraction of the land.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">Urban Green Spaces, Rain Gardens &amp; Parks</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Bioswales, infiltration beds, pollinator strips and people-first park design.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">Thematic &amp; Biodiversity Gardens</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Educational and biodiversity-rich spaces for schools, campuses and townships.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-6 reveal order-1 lg:order-2">
+      <div class="relative">
+        <div class="absolute -inset-4 rounded-[28px] bg-gradient-to-br from-[#5a9b3e]/15 to-[#1e5f73]/10 blur-2xl"></div>
+        <img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=900&q=80" alt="Afforestation" class="relative rounded-[28px] w-full h-[480px] object-cover border border-white shadow-xl"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 03 - CONSULTING -->
+<section id="consulting" class="section">
+  <div class="container-x grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-6 reveal">
+      <div class="relative">
+        <div class="absolute -inset-4 rounded-[28px] bg-gradient-to-br from-[#1e5f73]/10 to-[#5a9b3e]/10 blur-2xl"></div>
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Engineering planning and DPR preparation" class="relative rounded-[28px] w-full h-[480px] object-cover border border-white shadow-xl"/>
+      </div>
+    </div>
+    <div class="lg:col-span-6 reveal">
+      <div class="text-xs uppercase tracking-widest text-[color:var(--color-primary)] font-semibold">Practice 03</div>
+      <h2 class="font-display text-4xl lg:text-5xl font-semibold mt-3 leading-[1.1]">Consulting, Planning &amp; Monitoring</h2>
+      <p class="text-[color:var(--color-muted)] mt-5 text-lg leading-relaxed">
+        Seamless delivery from concept to completion through technical expertise, modern geospatial tools, and rigorous on-ground monitoring.
+      </p>
+      <div class="brand-divider mt-6"></div>
+      <div class="mt-6">
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">DPR Preparation including Design &amp; Estimate</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Bankable Detailed Project Reports with engineering drawings and BOQs.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">Site Assessment &amp; Surveys</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Hydrological, topographical, soil and ecological baseline studies.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">GIS Mapping &amp; Analysis</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Watershed delineation, land-use mapping and spatial analytics for siting decisions.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">End-to-End Project Implementation &amp; Monitoring</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Construction supervision, milestone tracking and post-handover monitoring.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 04 - CSR -->
+<section id="csr" class="section bg-[color:var(--color-surface-soft)]">
+  <div class="container-x grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-6 reveal order-2 lg:order-1">
+      <div class="text-xs uppercase tracking-widest text-[color:var(--color-accent-dark)] font-semibold">Practice 04</div>
+      <h2 class="font-display text-4xl lg:text-5xl font-semibold mt-3 leading-[1.1]">CSR &amp; Civil Infrastructure Implementation</h2>
+      <p class="text-[color:var(--color-muted)] mt-5 text-lg leading-relaxed">
+        Bridging CSR vision with on-ground impact through structured, accountable execution — for corporates, foundations and government bodies.
+      </p>
+      <div class="brand-divider mt-6"></div>
+      <div class="mt-6">
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">CSR Project Design &amp; Strategy</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Aligning corporate intent with high-impact, measurable interventions.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">NGO &amp; Stakeholder Coordination</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Bringing together panchayats, NGOs, vendors and beneficiaries on one timeline.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">Implementation &amp; Quality Control</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Vendor management, material QC and milestone-based execution.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="dot"></div>
+          <div>
+            <div class="font-semibold">Monitoring, Evaluation &amp; Reporting</div>
+            <div class="text-sm text-[color:var(--color-muted)] mt-1">Quantified outcomes and board-ready impact dashboards.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-6 reveal order-1 lg:order-2">
+      <div class="relative">
+        <div class="absolute -inset-4 rounded-[28px] bg-gradient-to-br from-[#5a9b3e]/15 to-[#1e5f73]/10 blur-2xl"></div>
+        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=900&q=80" alt="Community impact and plantation" class="relative rounded-[28px] w-full h-[480px] object-cover border border-white shadow-xl"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section class="section">
+  <div class="container-x">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <span class="eyebrow justify-center" style="display:inline-flex">How we work</span>
+      <h2 class="font-display text-4xl lg:text-5xl font-semibold mt-4 leading-[1.1]">A repeatable process, custom outcomes.</h2>
+    </div>
+    <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-4 mt-14 reveal">
+      <div class="card text-center">
+        <div class="font-display text-3xl font-semibold stat-num">01</div>
+        <div class="font-semibold mt-3">Discover</div>
+        <div class="text-xs text-[color:var(--color-muted)] mt-1">Brief, site visit, scoping</div>
+      </div>
+      <div class="card text-center">
+        <div class="font-display text-3xl font-semibold stat-num">02</div>
+        <div class="font-semibold mt-3">Design</div>
+        <div class="text-xs text-[color:var(--color-muted)] mt-1">DPR, drawings, estimate</div>
+      </div>
+      <div class="card text-center">
+        <div class="font-display text-3xl font-semibold stat-num">03</div>
+        <div class="font-semibold mt-3">Mobilise</div>
+        <div class="text-xs text-[color:var(--color-muted)] mt-1">Procurement, teams, permits</div>
+      </div>
+      <div class="card text-center">
+        <div class="font-display text-3xl font-semibold stat-num">04</div>
+        <div class="font-semibold mt-3">Execute</div>
+        <div class="text-xs text-[color:var(--color-muted)] mt-1">Quality build, transparent reporting</div>
+      </div>
+      <div class="card text-center">
+        <div class="font-display text-3xl font-semibold stat-num">05</div>
+        <div class="font-semibold mt-3">Sustain</div>
+        <div class="text-xs text-[color:var(--color-muted)] mt-1">Handover, monitoring, community</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[color:var(--color-ink)] text-white pt-20 pb-8">
+  <div class="container-x grid lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-5">
+      <img src="assets/images/logo-white.png" alt="SIPCS" class="h-[110px] lg:h-[128px]" />
+      <p class="mt-6 text-white/70 max-w-md leading-relaxed">
+        Smart Innovations Project Consultancy Services — building sustainable infrastructure, restoring nature, and enriching communities across India.
+      </p>
+      <div class="flex items-center gap-3 mt-7">
+        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zm-1.5-10.3a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zM19 19h-3v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V19h-3v-9h2.9v1.2h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.6 2 3.6 4.7z"/></svg>
+        </a>
+        <a href="mailto:smartinnovationsproject@gmail.com" aria-label="Email" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+        <a href="tel:+919315236380" aria-label="Phone" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1l-1.3 1.3a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="lg:col-span-2">
+      <div class="text-xs uppercase tracking-widest text-white/50 mb-4">Navigate</div>
+      <ul class="space-y-3 text-sm">
+        <li><a href="index.html" class="footer-link">Home</a></li>
+        <li><a href="about.html" class="footer-link">About</a></li>
+        <li><a href="services.html" class="footer-link">Services</a></li>
+        <li><a href="projects.html" class="footer-link">Projects</a></li>
+        <li><a href="contact.html" class="footer-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="lg:col-span-2">
+      <div class="text-xs uppercase tracking-widest text-white/50 mb-4">Services</div>
+      <ul class="space-y-3 text-sm">
+        <li><a href="services.html#water" class="footer-link">Water Conservation</a></li>
+        <li><a href="services.html#afforestation" class="footer-link">Afforestation</a></li>
+        <li><a href="services.html#consulting" class="footer-link">Consulting &amp; DPR</a></li>
+        <li><a href="services.html#csr" class="footer-link">CSR Implementation</a></li>
+      </ul>
+    </div>
+    <div class="lg:col-span-3">
+      <div class="text-xs uppercase tracking-widest text-white/50 mb-4">Contact</div>
+      <ul class="space-y-3 text-sm text-white/70">
+        <li><div class="text-white/50 text-xs mb-0.5">Email</div><a href="mailto:smartinnovationsproject@gmail.com" class="footer-link">smartinnovationsproject@gmail.com</a></li>
+        <li><div class="text-white/50 text-xs mb-0.5">Phone</div><a href="tel:+919315236380" class="footer-link">+91 93152 36380</a></li>
+        <li><div class="text-white/50 text-xs mb-0.5">Headquartered</div>Haryana, India</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-x border-t border-white/10 mt-14 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
+    <div>© <span id="year"></span> Smart Innovations Project Consultancy Services. All rights reserved.</div>
+    <div>Designed with care for water, environment &amp; sustainability.</div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projects — Sustainable Impact Across India | SIPCS</title>
+<meta name="description" content="Explore SIPCS projects across India — pond restoration, rainwater harvesting, afforestation, civil construction and CSR implementation." />
+<link rel="icon" type="image/png" href="assets/images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/css/styles.css" />
+<style>
+  .filter-btn {
+    padding: .55rem 1.1rem; border-radius: 999px; font-size: 13px; font-weight: 600;
+    background: #fff; color: var(--color-ink-soft); border: 1px solid var(--color-border);
+    transition: all .2s;
+  }
+  .filter-btn:hover { border-color: var(--color-primary); color: var(--color-primary); }
+  .filter-btn.active {
+    background: var(--color-ink); color: #fff; border-color: var(--color-ink);
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="navShell" class="nav-shell">
+  <div class="container-x flex items-center justify-between py-3">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/images/logo-white.png" alt="SIPCS" class="logo-light h-[50px] lg:h-[60px] w-auto" />
+      <img src="assets/images/logo.png" alt="SIPCS" class="logo-dark h-[50px] lg:h-[60px] w-auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-9">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="hidden lg:block">
+      <a href="contact.html" class="btn nav-cta-primary">Start a project
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <button id="menuBtn" class="menu-btn lg:hidden p-2 -mr-2" aria-label="Open menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+  <div class="container-x flex items-center justify-between py-4 border-b border-gray-100">
+    <img src="assets/images/logo.png" alt="SIPCS" class="h-11" />
+    <button id="menuClose" class="p-2 -mr-2" aria-label="Close menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="container-x flex-1 flex flex-col justify-center gap-1">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html" class="btn btn-primary mt-6 self-start">Start a project →</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="ph-bg" style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2400&q=85');"></div>
+  <div class="ph-overlay"></div>
+  <div class="container-x grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-7 reveal">
+      <span class="eyebrow">Our projects</span>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl mt-5 leading-[1.05]">
+        Sustainable infrastructure, <span class="italic font-light">restoring</span> nature &amp; communities.
+      </h1>
+      <p class="page-hero-text mt-6 text-lg max-w-2xl leading-relaxed">
+        SIPCS work across Haryana, Rajasthan, Uttar Pradesh, Maharashtra, Goa, Telangana, Jharkhand and Chhattisgarh.
+      </p>
+    </div>
+    <div class="lg:col-span-5 reveal">
+      <div class="grid grid-cols-2 gap-3">
+        <div class="glass-stat">
+          <div class="num">35+</div>
+          <div class="label">Projects delivered</div>
+        </div>
+        <div class="glass-stat">
+          <div class="num">8</div>
+          <div class="label">States covered</div>
+        </div>
+        <div class="glass-stat">
+          <div class="num">17+</div>
+          <div class="label">CSR collaborations</div>
+        </div>
+        <div class="glass-stat">
+          <div class="num">25+</div>
+          <div class="label">Water bodies restored</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILTERS + GRID -->
+<section class="section">
+  <div class="container-x">
+    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-10 reveal">
+      <h2 class="font-display text-3xl lg:text-4xl font-semibold">Completed &amp; ongoing portfolio</h2>
+      <div class="flex flex-wrap gap-2" id="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="water">Water</button>
+        <button class="filter-btn" data-filter="ecology">Afforestation</button>
+        <button class="filter-btn" data-filter="civil">Civil</button>
+        <button class="filter-btn" data-filter="consulting">Consulting</button>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 reveal" id="projectGrid">
+      <!-- Project Cards -->
+      <article class="project-card" data-category="water">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1494791368093-85217fbbf8de?auto=format&fit=crop&w=800&q=80" alt="Pond development and STP construction"/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(90,155,62,0.12);color:#3f7a2a">Water</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Gurugram, HR</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Pond Development &amp; STP Construction</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">End-to-end pond development integrated with sewage treatment.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · Geeli Mitti Foundation</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="water">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=800&q=80" alt="Pond and WWTP landscaping"/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(90,155,62,0.12);color:#3f7a2a">Water</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Noida · Gurugram · Bhiwadi</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Pond &amp; WWTP Landscaping &amp; Green Belt</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Multi-site landscaping and green belt development around water assets.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · Say Earth</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="water">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1559825481-12a05cc00344?auto=format&fit=crop&w=800&q=80" alt="Rainwater harvesting system"/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(90,155,62,0.12);color:#3f7a2a">Water</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Gurugram, HR</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Check Dam &amp; Rainwater Harvesting</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Catchment-scale check dams and rooftop RWH for recharge.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · Pawan Prithvi Paani</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="water">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1581922814484-0b48460b7010?auto=format&fit=crop&w=800&q=80" alt="DEWATS wastewater treatment"/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(90,155,62,0.12);color:#3f7a2a">Water</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Jhajjar, HR</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">DEWATS Plant &amp; Pond Restoration</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Decentralised wastewater treatment combined with pond revival.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · S.M. Sehgal Foundation</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="ecology">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt=""/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(90,155,62,0.12);color:#3f7a2a">Ecology</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Manesar, HR</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">RWH &amp; Rain Garden, NSG</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Rainwater harvesting plus a biodiversity rain garden for NSG.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · Cvent</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="ecology">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=800&q=80" alt=""/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(90,155,62,0.12);color:#3f7a2a">Ecology</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Gurugram, HR</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Pond Restoration &amp; Afforestation</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Wetland edge afforestation paired with full pond revival.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · Say Earth</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="civil">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt=""/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(30,95,115,0.12);color:#1e5f73">Civil</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Ranchi · Goa · Hyderabad</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Retail Showroom Construction</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Full turnkey construction across multiple showroom locations.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · First Meridian V5 Global</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="civil">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80" alt=""/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(30,95,115,0.12);color:#1e5f73">Civil</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Badra, Rajasthan</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Boundary Wall — RCC &amp; Brickwork</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Long-span boundary wall construction for industrial site.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · SAEL Industries Pvt. Ltd.</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="civil">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=800&q=80" alt=""/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(30,95,115,0.12);color:#1e5f73">Civil</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Raipur, CG</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Warehouse &amp; Dark Store — Turnkey</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Complete civil and interior works for a quick-commerce hub.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · Blinkit Warehouses</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="civil">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Veterinary hospital renovation"/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(30,95,115,0.12);color:#1e5f73">Civil</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Gurugram, HR</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Veterinary Hospital — Repair &amp; Renovation</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Heritage-sensitive renovation of a community veterinary facility.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · M3M Foundation</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="consulting">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=800&q=80" alt=""/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(255,140,0,0.12);color:#c66100">Consulting</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Jaipur · Mumbai</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">DPR Preparation Works</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Bankable detailed project reports with drawings and estimates.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · RMC Switchgears Ltd.</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="consulting">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80" alt=""/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(255,140,0,0.12);color:#c66100">Consulting</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Gorakhpur, UP</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Smart Meter &amp; DT/LT Installation</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Large-scale smart meter rollout supervision and execution.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · Genus Power Infrastructure</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="water">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt=""/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(90,155,62,0.12);color:#3f7a2a">Water</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Alwar, Rajasthan</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Pond, Mundawar</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Village pond revival programme in arid Rajasthan.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · Honda India</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="civil">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80" alt=""/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(30,95,115,0.12);color:#1e5f73">Civil</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Jhajjar, HR</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">School Construction — Palra</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Ground-up school construction including WASH facilities.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · Concentrix</div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="water">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1559825481-12a05cc00344?auto=format&fit=crop&w=800&q=80" alt=""/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tag" style="background:rgba(90,155,62,0.12);color:#3f7a2a">Water</span>
+            <span class="text-xs text-[color:var(--color-muted)]">Greater Noida, UP</span>
+          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Britannia Pond Site</h3>
+          <p class="text-sm text-[color:var(--color-muted)] mt-2">Industrial-adjacent pond ecology development.</p>
+          <div class="text-xs text-[color:var(--color-ink-soft)] mt-4 font-semibold">Client · Okas Ganga Agritech</div>
+        </div>
+      </article>
+    </div>
+
+    <div id="emptyState" class="text-center py-16 text-[color:var(--color-muted)] hidden">
+      No projects found in this category.
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT SUMMARY -->
+<section class="section bg-[color:var(--color-surface-soft)]">
+  <div class="container-x">
+    <div class="max-w-2xl mb-12 reveal">
+      <span class="eyebrow">Impact at a glance</span>
+      <h2 class="font-display text-4xl lg:text-5xl font-semibold mt-4 leading-[1.1]">
+        Outcomes that compound, year on year.
+      </h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
+      <div class="card">
+        <div class="stat-num">25+</div>
+        <div class="font-semibold mt-3">Water bodies restored</div>
+        <p class="text-sm text-[color:var(--color-muted)] mt-2">Reviving traditional ponds, talabs and check dams.</p>
+      </div>
+      <div class="card">
+        <div class="stat-num">50K+</div>
+        <div class="font-semibold mt-3">Trees planted</div>
+        <p class="text-sm text-[color:var(--color-muted)] mt-2">Native species, urban canopies, Miyawaki forests.</p>
+      </div>
+      <div class="card">
+        <div class="stat-num">35+</div>
+        <div class="font-semibold mt-3">Projects delivered</div>
+        <p class="text-sm text-[color:var(--color-muted)] mt-2">On time, on budget, on impact.</p>
+      </div>
+      <div class="card">
+        <div class="stat-num">17+</div>
+        <div class="font-semibold mt-3">CSR collaborations</div>
+        <p class="text-sm text-[color:var(--color-muted)] mt-2">India's most respected corporates as partners.</p>
+      </div>
+      <div class="card">
+        <div class="stat-num">100+</div>
+        <div class="font-semibold mt-3">Acres of land revived</div>
+        <p class="text-sm text-[color:var(--color-muted)] mt-2">Catchments, wastelands, urban edges.</p>
+      </div>
+      <div class="card">
+        <div class="stat-num">8</div>
+        <div class="font-semibold mt-3">States covered</div>
+        <p class="text-sm text-[color:var(--color-muted)] mt-2">A truly pan-India delivery footprint.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[color:var(--color-ink)] text-white pt-20 pb-8">
+  <div class="container-x grid lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-5">
+      <img src="assets/images/logo-white.png" alt="SIPCS" class="h-[110px] lg:h-[128px]" />
+      <p class="mt-6 text-white/70 max-w-md leading-relaxed">
+        Smart Innovations Project Consultancy Services — building sustainable infrastructure, restoring nature, and enriching communities across India.
+      </p>
+      <div class="flex items-center gap-3 mt-7">
+        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zm-1.5-10.3a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zM19 19h-3v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V19h-3v-9h2.9v1.2h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.6 2 3.6 4.7z"/></svg>
+        </a>
+        <a href="mailto:smartinnovationsproject@gmail.com" aria-label="Email" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+        <a href="tel:+919315236380" aria-label="Phone" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1l-1.3 1.3a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="lg:col-span-2">
+      <div class="text-xs uppercase tracking-widest text-white/50 mb-4">Navigate</div>
+      <ul class="space-y-3 text-sm">
+        <li><a href="index.html" class="footer-link">Home</a></li>
+        <li><a href="about.html" class="footer-link">About</a></li>
+        <li><a href="services.html" class="footer-link">Services</a></li>
+        <li><a href="projects.html" class="footer-link">Projects</a></li>
+        <li><a href="contact.html" class="footer-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="lg:col-span-2">
+      <div class="text-xs uppercase tracking-widest text-white/50 mb-4">Services</div>
+      <ul class="space-y-3 text-sm">
+        <li><a href="services.html#water" class="footer-link">Water Conservation</a></li>
+        <li><a href="services.html#afforestation" class="footer-link">Afforestation</a></li>
+        <li><a href="services.html#consulting" class="footer-link">Consulting &amp; DPR</a></li>
+        <li><a href="services.html#csr" class="footer-link">CSR Implementation</a></li>
+      </ul>
+    </div>
+    <div class="lg:col-span-3">
+      <div class="text-xs uppercase tracking-widest text-white/50 mb-4">Contact</div>
+      <ul class="space-y-3 text-sm text-white/70">
+        <li><div class="text-white/50 text-xs mb-0.5">Email</div><a href="mailto:smartinnovationsproject@gmail.com" class="footer-link">smartinnovationsproject@gmail.com</a></li>
+        <li><div class="text-white/50 text-xs mb-0.5">Phone</div><a href="tel:+919315236380" class="footer-link">+91 93152 36380</a></li>
+        <li><div class="text-white/50 text-xs mb-0.5">Headquartered</div>Haryana, India</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-x border-t border-white/10 mt-14 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
+    <div>© <span id="year"></span> Smart Innovations Project Consultancy Services. All rights reserved.</div>
+    <div>Designed with care for water, environment &amp; sustainability.</div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  const filters = document.querySelectorAll('#filters .filter-btn');
+  const cards = document.querySelectorAll('#projectGrid .project-card');
+  const empty = document.getElementById('emptyState');
+  filters.forEach(b => b.addEventListener('click', () => {
+    filters.forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    const f = b.dataset.filter;
+    let shown = 0;
+    cards.forEach(c => {
+      const show = (f === 'all' || c.dataset.category === f);
+      c.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    empty.classList.toggle('hidden', shown !== 0);
+  }));
+</script>
+</body>
+</html>
